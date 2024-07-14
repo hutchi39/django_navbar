@@ -1,0 +1,51 @@
+{% extends "travel/base.html" %}
+{% load static %}
+{% block MPCbody %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="MPCbody"> 
+	<div class="MainPageCarousel-container">
+		<div class="MPC-slide">
+
+			
+			<div class="MPC-item" style="background-image: url('/media/maldives/beach_me.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Maldives</div>
+					<div class="MPC-des">Relax in a private bungalow on one of the many islands, or take in some of the diving and surfing this place has to offer!</div>
+                    <div class="MPC-see-more">
+                        <a href="{% url 'Sri Lanka' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/india/agra/taj_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">India</div>
+					<div class="MPC-des">Home of the Taj Mahal, so much history and amazing foods!</div>
+					<button>See More</button>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/egypt/giza/pyramid_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Egypt</div>
+					<div class="MPC-des">Pyramids of Giza...</div>
+					<button>See More</button>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/srilanka/sigiriya/sunrise_4.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Sri Lanka</div>
+					<div class="MPC-des">Stunning beaches and surf, colorful buses, super backpacker friendly!</div>
+                    <div class="MPC-see-more">
+                        <a href="{% url 'Sri Lanka' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="MPC-next-prev">
+			<button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+			<button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+		</div>
+	</div>
+	<script src="{% static 'travel/MPC_specific.js' %}"></script>
+</div>
+{% endblock %}

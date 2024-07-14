@@ -1,0 +1,83 @@
+{% extends "travel/base.html" %}
+{% load static %}
+{% block MPCbody %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="MPCbody"> 
+	<div class="MainPageCarousel-container">
+		<div class="MPC-slide">
+
+            <div class="MPC-item" style="background-image: url('/media/cambodia/phnom_penh/mekong_river.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Phnom Penh, Cambodia</div>
+					<div class="MPC-des">View from the hostel of Mekong River</div>
+                    <div class="MPC-see-more">
+                        <a href="#Phnom_Penh"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/cambodia/siem_reap/angkorwat_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Siem Reap, CambodiaTEST</div>
+					<div class="MPC-des">View of Angkor Wat shortly after "sunrise"</div>
+                    <div class="MPC-see-more">
+                        <a href="#Siem_Reap"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/cambodia/siem_reap/trees_4.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Siem Reap, Cambodia</div>
+					<div class="MPC-des">View of the incredible trees at Ta Prohm</div>
+                    <div class="MPC-see-more">
+                        <a href="#Siem_Reap"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/cambodia/siem_reap/angkorwat_4.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Siem Reap, Cambodia</div>
+					<div class="MPC-des">View from the top of Angkor Wat looking over the front entrance area</div>
+                    <div class="MPC-see-more">
+                        <a href="#Siem_Reap"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/cambodia/siem_reap/temple_3_horiz.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Siem Reap, Cambodia</div>
+					<div class="MPC-des">View of Angkor Thom</div>
+                    <div class="MPC-see-more">
+                        <a href="#Siem_Reap"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/cambodia/siem_reap/trees_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Siem Reap, Cambodia</div>
+					<div class="MPC-des">A scene from Indiana Jones at Ta Prohm</div>
+                    <div class="MPC-see-more">
+                        <a href="#Siem_Reap"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/cambodia/siem_reap/trees_2.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Siem Reap, Cambodia</div>
+					<div class="MPC-des">A scene from Indiana Jones at Ta Prohm</div>
+                    <div class="MPC-see-more">
+                        <a href="#Siem_Reap"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            
+        
+        </div>
+
+		<div class="MPC-next-prev">
+			<button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+			<button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+		</div>
+	</div>
+	<script src="{% static 'travel/MPC_specific.js' %}"></script>
+</div>
+{% endblock %}

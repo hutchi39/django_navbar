@@ -1,0 +1,65 @@
+{% extends "travel/base.html" %}
+{% load static %}
+{% block MPCbody %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="MPCbody"> 
+	<div class="MainPageCarousel-container">
+		<div class="MPC-slide">
+			
+            <div class="MPC-item" style="background-image: url('/media/vietnam/ninhbinh/hotel.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Ninh Binh, Vietnam</div>
+					<div class="MPC-des">Stunning hotels in a different pace of life south of Hanoi</div>
+					<div class="MPC-see-more">
+                        <a href="#NinhBinh"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/vietnam/ninhbinh/sunset.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Ninh Binh, Vietnam</div>
+					<div class="MPC-des">Located in the North of Vietnam. Really laid back town a few hours south from Hanoi or Ha Long Bay. Beautiful or cruise down the river, with tons of dreamy hotel locations.</div>
+					<div class="MPC-see-more">
+                        <a href="#NinhBinh"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/vietnam/halongbay/halongbay_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Ha Long Bay, Vietnam</div>
+					<div class="MPC-des">Take a cruise through the bay and experience one of the Natural Wonders of the World</div>
+					<div class="MPC-see-more">
+                        <a href="#HaLongBay"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/vietnam/hanoi/train_ground_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Hanoi, Vietnam</div>
+					<div class="MPC-des">Take a bit of a Banh Mi and drink endless coffee and beer here!</div>
+					<div class="MPC-see-more">
+                        <a href="#Hanoi"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            <div class="MPC-item" style="background-image: url('/media/vietnam/saigon/street_night.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Saigon, Vietnam</div>
+					<div class="MPC-des">Explore the Saigon nightlife or check out some of the Vietnam War Museums</div>
+					<div class="MPC-see-more">
+                        <a href="#Saigon"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+            
+			
+		</div>
+
+		<div class="MPC-next-prev">
+			<button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+			<button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+		</div>
+	</div>
+	<script src="{% static 'travel/MPC_specific.js' %}"></script>
+</div>
+{% endblock %}

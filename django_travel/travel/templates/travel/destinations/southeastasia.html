@@ -1,0 +1,98 @@
+{% extends "travel/base.html" %}
+{% load static %}
+{% block MPCbody %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="MPCbody"> 
+	<div class="MainPageCarousel-container">
+		<div class="MPC-slide">
+			<div class="MPC-item" style="background-image: url('/media/brunei/mosque_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Brunei</div>
+					<div class="MPC-des">Two stunning mosques, and ... some cheap gas?</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Brunei' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/indonesia/java_east/malang/bromo_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Indonesia</div>
+					<div class="MPC-des">Volcanoes, world class diving and surfing, orangutan's. This country has it all!</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Indonesia' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/laos/pakse/waterfall_1_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Laos</div>
+					<div class="MPC-des">Stunning mountains and waterfalls to explore!</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Laos' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/philippines/bohol/waterfall_1_2.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Philippines</div>
+					<div class="MPC-des">Endless island hopping with waterfalls, diving, and surfing in between it all!</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Philippines' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/vietnam/hanoi/train_ground_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Vietnam</div>
+					<div class="MPC-des">Home to one of the Natural Wonders of the World, and a running train you can have a coffee steps away!</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Vietnam' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/thailand/aonang/img_2_railay_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Thailand</div>
+					<div class="MPC-des">Amazing foods and stunning beaches. A diverse country with lots to offer any traveler!</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Thailand' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/cambodia/siem_reap/angkorwat_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Cambodia</div>
+					<div class="MPC-des">Some refer to as the 8th Wonder of the World. So many temples to explore</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Cambodia' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/malaysia/langkawi/hike_1.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Malaysia</div>
+					<div class="MPC-des">A rich history, beaches, lush mountains, and orangutan's on Borneo to name a few.</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Malaysia' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+			<div class="MPC-item" style="background-image: url('/media/singapore/trees_bay.jpeg');">
+				<div class="MPC-content">
+					<div class="MPC-name">Singapore</div>
+					<div class="MPC-des">World class food, and one of the best airports. A bit of a change compared to the rest of Southeast Asia</div>
+					<div class="MPC-see-more">
+                        <a href="{% url 'Singapore' %}"><button>See More</button></a>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="MPC-next-prev">
+			<button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+			<button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+		</div>
+	</div>
+	<script src="{% static 'travel/MPC_specific.js' %}"></script>
+</div>
+{% endblock %}
